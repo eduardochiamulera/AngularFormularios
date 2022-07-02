@@ -1,0 +1,35 @@
+ng generate module home --routing -d
+
+o "-d" roda o comando no modo dryRun que executa o comando
+mas não cria os arquivos.
+Serve para verificarmos se a pasta e os arquivos estão corretos, a nomenclatura, se a pasta está certa ou não.
+
+Após validarmos, basta rodar o comando novamente sem o "-d"
+
+ng generate module home --routing
+
+Pra que serve um modulo no Angular?
+	É a principal forma de organizar o código em uma aplicação ANGULAR.
+	Ela é uma ferramenta bem flexivel e permite a equipe a organizar o código como desejar.
+	Existe uma convenção que é a "feature module" aonde criamos todos os arquivos dentro da pasta do component, isolando também as rotas dentro do módulo.
+
+O angular isola o css por componente, se tivermos um css para toda a aplicação deve se usar o arquivo styles.css.
+
+Sempre que um componente é criado é necessário declara-lo no módulo correspondente.
+
+Em um projeto ANGULAR, onde colocamos as imagens ou arquivos estáticas do projeto?
+	No arquivo angular.json tem a propriedade "assets" que é um array que fica os arquivos estáticos do projeto.
+	Assets = Ativos
+
+
+Router-outlet
+	Essa diretiva do angular indica que nesse ponto será renderizado um conteúdo vindo de uma rota.
+
+Dentro de rotas é possivel adicionar um array com filhos (children)
+	Essas rotas filhas seráo abertas dentro de uma tag <router-outlet>
+	
+
+Por que usar módulos no Angular?
+	Podemos organizar os componentes em módulos de funcionalidade (Feature Module) e módulos 	de componentes genéricos.
+	Cada módulo pode ter seu próprio arquivo de rota, facilitando a organização das rotas no 	seu projeto Angular.
+	Com a funcionalidade do Lazy Loading, os módulos podem ser carregados sob demanda no 	navegador do 	usuário, melhorando a performance da navegação.
