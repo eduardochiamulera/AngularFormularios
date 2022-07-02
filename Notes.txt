@@ -32,4 +32,16 @@ Dentro de rotas é possivel adicionar um array com filhos (children)
 Por que usar módulos no Angular?
 	Podemos organizar os componentes em módulos de funcionalidade (Feature Module) e módulos 	de componentes genéricos.
 	Cada módulo pode ter seu próprio arquivo de rota, facilitando a organização das rotas no 	seu projeto Angular.
-	Com a funcionalidade do Lazy Loading, os módulos podem ser carregados sob demanda no 	navegador do 	usuário, melhorando a performance da navegação.
+	Com a funcionalidade do Lazy Loading, os módulos podem ser carregados sob demanda no 			navegador do 	usuário, melhorando a performance da navegação.
+	
+REGRAS DE NEGÓCIO
+	
+	Em um projeto ANGULAR o local correto de se colocar regras de negócio são nas classes SERVICES.
+	Um serviço implementa regras de negócio, ex: 
+		- Comunicação com o Backend
+		- Comunicação com o localStorage
+	
+	
+OBSERVABLE - ANGULAR
+	É parecido com uma promise javascript, é um objeto que quando a requisição completar
+	ele irá retornar o valor informado no método.
